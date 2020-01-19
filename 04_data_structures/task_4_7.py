@@ -10,3 +10,12 @@
 '''
 
 mac = 'AAAA:BBBB:CCCC'
+
+mac = mac.replace(":","")
+mac_decimal = int(mac,16)
+mac_binary = bin(mac_decimal)
+mac_str = str(mac_binary).replace("0b","")
+
+print(mac_str)
+
+#done

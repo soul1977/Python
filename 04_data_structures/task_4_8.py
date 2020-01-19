@@ -19,3 +19,16 @@
 '''
 
 ip = '192.168.3.1'
+
+octets = ip.split(".")
+octets[0] = int(octets[0])
+octets[1] = int(octets[1])
+octets[2] = int(octets[2])
+octets[3] = int(octets[3])
+
+print(f'''
+{octets[0]:<9} {octets[1]:<9} {octets[2]:<9} {octets[3]:<9}
+{octets[0]:>09b} {octets[1]:>09b} {octets[2]:>09b} {octets[3]:>09b}
+''')
+
+#done
